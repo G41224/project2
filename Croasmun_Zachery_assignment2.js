@@ -15,7 +15,7 @@ var sharkName = "Iron Tooth",
 	catchTime = [30, 20, 8];
 	
 
-console.log("I the mighty " + sharkName + " can see 3 fish by the names of " + fishNames );
+console.log("I the mighty " + sharkName + " can see 3 fish by the names of " + fishNames[0] + ", " + fishNames[1] + ", " + "and " + fishNames[2]);
 
 
 var fishSeen = function(fishNumber){
@@ -40,10 +40,10 @@ var chase = function(fish){
 		time = catchTime[fish];
 	
 	console.log(sharkName + " starts to chase " + thatFish + "!")
-	console.log('It will only take me' + time + " minuets to catch you. I would say your prayers.")
+	console.log('It will only take me ' + time + " minuets to catch you. I would say your prayers.")
 	while(time > 0){
 		
-		console.log(time + " Minuets till I catch you" + thatFish + "!");
+		console.log(time + " Minuets till I catch you " + thatFish + "!");
 		time -= 2;
 	};
 	return console.log("Hahahahaha " + thatFish + " was Yummy!");
@@ -79,3 +79,6 @@ var stillHungry = function (string){
 };
 
 stillHungry(" so I am going to look for more food");
+fishSeen(0);
+chase(0);
+console.log("Now " + sharkName + " is full")
