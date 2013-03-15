@@ -39,8 +39,8 @@ var chase = function(fish){
 	var thatFish = fishNames[fish],
 		time = catchTime[fish];
 	
-	console.log("I am going to eat you " + thatFish + "!")
-	console.log("It will take me " + time + " minuets to catch you. I would say your prayers.")
+	console.log(sharkName + " starts to chase " + thatFish + "!")
+	console.log('It will only take me' + time + " minuets to catch you. I would say your prayers.")
 	while(time > 0){
 		
 		console.log(time + " Minuets till I catch you" + thatFish + "!");
@@ -51,12 +51,31 @@ var chase = function(fish){
 
 chase(1);
 
-var newFish = function(){
+console.log("Is that another meal I see swiming over there.")
+
+var newFish = function(name, size){
 	
+	var fishSize = size
 	
+	if (fishSize < ironTummy) {
+		
+		conaole.log(name + " Your going to be my next meal!")
+		
+	} else{
+		
+		console.log("That fish " + name + " is way to big for me to eat!")
+		
+	};	
 	
 };
 
+newFish("john", 55);
 
+var stillHungry = function (string){
+	var ironStat = "But I am still so very Hungry"
+	
+	return console.log(ironStat + string)
+	
+};
 
-
+stillHungry(" so I am going to look for more food");
